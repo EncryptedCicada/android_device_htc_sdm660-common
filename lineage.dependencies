@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_kernel_htc_iml",
+    "target_path": "kernel/htc/htc_iml"
+  },
+  {
+    "repository": "android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings"
+  }
+]
