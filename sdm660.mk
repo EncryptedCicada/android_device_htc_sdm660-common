@@ -125,12 +125,17 @@ PRODUCT_PACKAGES += \
     Snap
 
 ###
-#DIFF: There are no cabl configuration files in the stock rom. I belive it is implemented in the firmware.
+#DIFF: There are no cabl configuration files in the stock rom. We use QDCM.
 ## CABL
 #PRODUCT_COPY_FILES += \
 #    device/htc/sdm660-common/configs/cabl/cabl_DJN_hx83112a_1080p_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cabl_DJN_hx83112a_1080p_video_mode_dsi_panel.xml \
 #    device/htc/sdm660-common/configs/cabl/cabl_truly_hx83112a_1080p_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cabl_truly_hx83112a_1080p_video_mode_dsi_panel.xml
 ###
+
+# QDCM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qdcm_calib_data/qdcm_calib_data_truly_ssd2092_1080p_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_truly_ssd2092_1080p_video_mode_dsi_panel.xml \
+    $(LOCAL_PATH)/configs/qdcm_calib_data/qdcm_calib_data_kingdisplay_td4310_1080p_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_kingdisplay_td4310_1080p_video_mode_dsi_panel.xml
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
