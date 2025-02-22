@@ -25,7 +25,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter htc_iml, htc_imldugl, $(TARGET_DEVICE)),)
+ifneq ($(filter iml, imldugl, $(TARGET_DEVICE)),)
 
 include $(call first-makefiles-under,$(LOCAL_PATH))
 

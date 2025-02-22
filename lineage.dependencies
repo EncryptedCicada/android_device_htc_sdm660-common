@@ -1,7 +1,7 @@
 [
   {
     "repository": "android_kernel_htc_iml",
-    "target_path": "kernel/htc/htc_iml"
+    "target_path": "kernel/htc/iml"
   },
   {
     "repository": "android_packages_resources_devicesettings",

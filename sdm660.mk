@@ -196,14 +196,14 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.htc_iml.usb.rc \
+    init.iml.usb.rc \
     init.class_main.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.rc \
-    ueventd.htc_iml.rc
+    ueventd.iml.rc
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -343,7 +343,7 @@ PRODUCT_PACKAGES += \
 # Recovery
 PRODUCT_COPY_FILES += \
     device/htc/sdm660-common/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
-    device/htc/sdm660-common/recovery/root/init.recovery.htc_iml.usb.rc:root/init.recovery.htc_iml.usb.rc
+    device/htc/sdm660-common/recovery/root/init.recovery.iml.usb.rc:root/init.recovery.iml.usb.rc
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
