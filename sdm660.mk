@@ -134,8 +134,8 @@ PRODUCT_PACKAGES += \
 
 # QDCM
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/qdcm_calib_data/qdcm_calib_data_truly_ssd2092_1080p_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_truly_ssd2092_1080p_video_mode_dsi_panel.xml \
-    $(LOCAL_PATH)/configs/qdcm_calib_data/qdcm_calib_data_kingdisplay_td4310_1080p_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_kingdisplay_td4310_1080p_video_mode_dsi_panel.xml
+    device/htc/sdm660-common/configs/qdcm_calib_data/qdcm_calib_data_truly_ssd2092_1080p_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_truly_ssd2092_1080p_video_mode_dsi_panel.xml \
+    device/htc/sdm660-common/configs/qdcm_calib_data/qdcm_calib_data_kingdisplay_td4310_1080p_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_kingdisplay_td4310_1080p_video_mode_dsi_panel.xml
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
