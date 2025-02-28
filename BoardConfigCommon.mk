@@ -137,11 +137,11 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ttyGS0,115200 androidboot.hardware=qcom ehci-hcd.park=3 sched_enable_hmp=1
+BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0 androidboot.hardware=qcom ehci-hcd.park=3 sched_enable_hmp=1
 BOARD_KERNEL_CMDLINE += sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 androidboot.configfs=true
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3
 # DIFF: REMOVE THE FOLLOWING LINE OF CMDLINE FLAGS FOR "user" BUILD AS THEY ARE SOLELY FOR DEBUGGING PURPOSES
-BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000 user_debug=31 earlyprintk loglevel=7 ignore_loglevel printk.time=1 initcall_debug
+BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000 user_debug=31
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
